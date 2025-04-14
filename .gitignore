@@ -1,0 +1,7 @@
+venv/
+__pychache__/
+__/
+__init__.py
+__pycache__/
+instance/
+migrations/

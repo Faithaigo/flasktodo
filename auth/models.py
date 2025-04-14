@@ -13,7 +13,7 @@ class User(db.Model, UserMixin):
     email: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
     password_hash: Mapped[str] = mapped_column(String(255), nullable=False)
     
-    tasks = relationship("Task", back_populates="user", cascade="all, delete-orphan")
+    tasks = relationship("Todo", back_populates="user", cascade="all, delete-orphan")
     
     def to_dict(self):
         return {"id": self.id, "username": self.username, "email": self.email}

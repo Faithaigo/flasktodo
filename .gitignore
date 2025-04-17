@@ -1,7 +1,8 @@
+.env
+.idea
 venv/
-__pychache__/
+__pycache__/
 __/
 __init__.py
-__pycache__/
 instance/
 migrations/
